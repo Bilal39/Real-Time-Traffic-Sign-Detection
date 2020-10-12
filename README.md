@@ -18,4 +18,6 @@ Testing samples are also attached in result folder.Two of the testing images are
 ![Screenshot](test_image4.png)
 11. Inference graph of my model can be downloaded from the link. https://drive.google.com/file/d/1CEd_Grc3Vqmlmko0U6ggWEAtGspkwxrA/view?usp=sharing  
 12. Then i implemented this model on raspberry pi 4. I got FPS from (1.6 - 2.1) FPS.  
-13. I also added audio assist system to it. The model says the name of the class of traffic sign it detected.  
+13. I also added audio assist system to it. The model says the name of the class of traffic sign it detected.    
+  
+
