@@ -1,5 +1,6 @@
 # Real-Time-Traffic-Sign-Detection
 I have trained SSDlite-MobilenetV2 Model on GTSDB. I was able to achieve 75% mAP on testing dataset of GTSDB. It took me 22768 steps to train the model. Afterwards my validation accuracy started to decrease.
+The reason why i selected SSDlite because we made use of researchers work which shows that ssd-mobilnet is that fastest and lightest model in terms of memory consumption.Further details can be found in this link. https://github.com/aarcosg/traffic-sign-detection . In this link they have discussed about ssd model instead of ssdlite. SSDlite is slightly better in terms of FPS on embedded device. I also trained ssd-mobilenetv2 with ssdlite-mobilenetv2. Both have same mAP after training of model.While during implementation on raspberry pi 4 , we had 30% more FPS using ssdlite.
 Here are the steps i did in order to train a model.
 First of all i downloaded the GTSDB dataset from this link https://sid.erda.dk/public/archives/ff17dc924eba88d5d01a807357d6614c/published-archive.html
 The dataset is in PPM format so i converted it them to png format using the file ppm_to_png.py given in above link.
