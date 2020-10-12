@@ -7,6 +7,8 @@ The dataset is in PPM format so i converted it them to png format using the file
 Then i created tensorflow record(tfrecord) file.Generate_tfrecord.py is also provided above in order to convert images and csv file into tfrecord. You can take help from the link https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
 After creating tfrecord file, i migrated to Google Colab since i didn't had access to heavy GPU and CPU.
 I used premium account in order to train the model.It took me 6-8 hours straight to train the model.
+I have also provided model config file in Model folder. You can download the model using this link of modelzoo  https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md
+I have attached the labelmap.pbtxt file which was used in order to train model on GTSDB.
 I trained the model twice.First time with training dataset(containing 600 images) and validation dataset(300 images which is originally for testing ).Once i got the approximate number of steps around which my model trained for the first time. On second run , i trained the model straight to that number of steps that is 22768.(The reason i didn't train the model in single run only because i had limited 900 pictures only in which 600 for training and 300 for testing. I didn't want to further split training dataset into (training and validation dataset).
 i have attached a picture in results folder of mAP calculated during first training run with name mAP1 and for second training i, mAP picture is named as mAP2.
 I have also attaced PR(precision recall) curves of it in the results folder.Testing samples are also attached in result folder.
